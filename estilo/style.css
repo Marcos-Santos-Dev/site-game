@@ -1,0 +1,337 @@
+@charset "UTF - 8";
+
+/* Titulo e Subtitulo*/
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+/* Titulo Principal */
+@font-face {
+    font-family:"pixel";
+    src: url(../Font/Pixel\ Digivolve\ Italic.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor0:#9FD1F2;
+    --cor1:#7A9DCA;
+    --cor2:#7D72E6;
+    --cor3:#3D3CAF;
+    --cor4:#302F7F;
+    --cor5:#7e72e64f;
+
+    --font-titulo:'pixel';
+    --font-subtitulo:'VT323';
+    --font-principal:'arial,helvertica,sans-serif';
+}
+
+body{
+    background-color:var(--cor1);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor1),var(--cor2),var(--cor4)); 
+}
+
+header h1{
+    color: white;
+    font-family: var(--font-titulo);
+    text-align: center;
+    padding: 20px;
+    font-size: 2.3em;
+    font-weight: lighter;
+    text-shadow: 0px 9px 6px #00000029;
+}
+
+header p{
+    color: white;
+    font-family: var(--font-titulo);
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 1.2em;
+    text-shadow: 0px 9px 6px #00000038;
+}
+
+nav{
+    background-color: var(--cor4);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 9px 10px 5px #00000026;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 13px;
+}
+
+nav a:hover{
+    background-color: var(--cor5);
+    border-radius: 20px;
+    transition-duration: .5s;
+    color: var(--cor0);
+}
+
+
+.link{
+    text-decoration: none;
+    padding: 2px;
+    color: var(--cor0);
+}
+
+.link p{
+    padding: 0;
+    margin: 0;
+}
+
+.link:hover{
+    text-decoration: underline;
+    color: rgb(6, 6, 109);
+}
+
+.link::after{
+    content: '\00A0\1F517';
+}
+
+main{
+    background-color:whitesmoke;
+    padding: 10px;
+    min-width: 320px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 80px;
+    border-radius: 0 0 10px 10px;
+    box-shadow:0px 9px 20px 0px #0000006e ;
+}
+
+main h1{
+    padding: 20px;
+    font-size: 2.6em;
+    font-family:var(--font-subtitulo);
+    text-align: center;
+    font-weight: lighter;
+}
+
+main h2{
+    padding:20px;
+    font-weight: lighter;   
+}
+
+main h3{
+    padding:30px;
+    
+}
+
+main p {
+    text-align: justify;
+    line-height: 2em;
+    font-family: var(--font-principal);
+    text-indent: 10%;
+    margin: 10px 30px;
+    font-size: 1.1em;
+}
+
+strong{
+   font-size: 1.1em;
+}
+
+img{
+    min-width: 350px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.video{
+    background-color: var(--cor3);
+    position: relative;
+    padding: 25%;
+    margin: 30px -10px;
+}
+
+.video iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    box-shadow:0px 0px 12px 11px #00000036;
+}
+
+mark{
+    background-color: var(--cor2);
+    padding: 3px;
+}
+
+.paragrafo{
+    text-align: justify;
+    text-indent: 2%;
+}
+
+aside{
+    background-color: var(--cor0);
+    padding: 20px;
+    border-radius: 7px;
+    margin: 20px;
+    box-shadow: 0px 5px 9px 2px #0000002e;
+}
+
+aside h2{
+    background-color: var(--cor3);
+    margin: -20px -20px 10px ;
+    border-radius: 7px 7px 0 0;
+    color: var(--cor0);
+}
+
+aside ol{
+    list-style-position: inside;
+    columns: 2;
+    line-height: 2.5em;
+    font-size: 1.1em;
+}
+
+.subtitulo{
+    font-weight: lighter;
+    font-size: 1.2em;
+}
+
+#lista h3{
+    background-color: var(--cor0);
+    margin: -20px -20px 10px ;
+    text-align: center;
+    border-radius: 20px 20px 0 0 ;
+}
+
+#lista{
+    background-color: var(--cor3);
+    margin:34px 30px;
+    border-radius: 20px;
+    box-shadow:0px 5px 9px 2px #0000002e;
+}
+
+#lista ol{
+    columns: 1;
+    color: white;
+}
+
+#para1{
+    font-size: 1.3em;
+}
+
+.empresagame{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empresagame a{
+    text-decoration: none;
+}
+
+.empresa{
+    width: 200px;
+    height:400px;
+    border-radius: 50px;
+    margin: 10px;
+    transition: width .8s;
+}
+
+.empresa:hover{
+    width: 900px;
+    
+}
+
+#e1{
+    background-image:url('../Xbox.jpeg');
+    box-shadow: 0px 5px 7px 4px rgba(0, 0, 0, 0.178) ;
+}
+#e2{
+    background-image:url('../Playstation.jpg');
+    box-shadow: 0px 5px 7px 4px rgba(0, 0, 0, 0.178);
+}
+
+#e3{
+    background-image:url('../nintendo.webp');
+    box-shadow: 0px 5px 7px 4px rgba(0, 0, 0, 0.178);
+}
+
+#e1 p{
+    font-size: 2.0em;
+    text-align: center;
+    margin: 0;
+    padding: 135px 2px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.479);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#e2 p {
+    font-size: 2.0em;
+    text-align: center;
+    margin: 0;
+    padding: 135px 2px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.479);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#e3 p {
+    font-size: 2.0em;
+    text-align: center;
+    margin: 0;
+    padding: 135px 2px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.479);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#botao{
+   border: 2px solid var(--cor1);
+   padding: 5px;
+   width: 60px;
+   height: 50px;
+   content: '\1F815'; 
+   background-color: var(--cor1);
+   border-radius: 50px;
+   margin: auto;
+   margin-top: 100px;
+   margin-bottom: 30px;
+   box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.334);
+   }
+
+#botao:hover{
+   background-color: var(--cor4);
+   border: 2px solid var(--cor4);
+   padding: 8px;
+}  
+
+#botao:hover a{
+    color: white;
+}
+    
+#botao p{
+    margin: -14px 18px;
+    margin-bottom: px;
+    font-size: 2.5em;
+}
+
+#botao a {
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    background-color: var(--cor3);
+    padding: 10px;
+}
+
+footer p{
+   color: white;
+   text-align: center;
+}
