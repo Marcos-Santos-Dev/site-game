@@ -32,7 +32,7 @@ body{
 }
 
 header{
-    background-image: linear-gradient(to bottom, var(--cor1),var(--cor2),var(--cor4)); 
+    background-image: linear-gradient(to bottom, var(--cor1),var(--cor4)); 
 }
 
 header h1{
